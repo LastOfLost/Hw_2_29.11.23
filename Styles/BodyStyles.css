@@ -1,28 +1,109 @@
 
-body{
-    width: 100%;
-    height: 100%;
-background-color: rebeccapurple;
-}
-
-.test{
-    background-color: red;
-    width: 100px;
-    height: 100px;
-}
-
-img{
+*{
+    position: relative;
     background-size: cover;
+    margin: 0px;
 }
 
-.space-background{
+body{
+    height: 100vh;
     background-image: url(/Images/background.jpg);
-    height: max-content;
-    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.asteroid{
+    background-image: url(/Images/asteroid.png);
+    width: 5vh;
+    height: 5vh;
+    position: absolute;
 }
 
 .moon{
     background-image: url(/Images/moon.png);
-    height: 15%;
-    width: 15%;
+    height: 300px;
+    width: 300px;
+    border-radius: 60%;
+    z-index: 1;
 }
+
+.texture{
+    width: 30%;
+    justify-content: right;
+}
+
+.asteroid-1{
+    position: absolute;
+}
+
+.asteroid-2{
+    position: absolute;
+    width: 50vh;
+    left: 0%;
+    top: 100%;
+
+    justify-content: right;
+}
+
+.animation-rotate{
+    animation: rotate 30s linear infinite;
+}
+
+.animation-rotate-2{
+    animation: rotate 20s linear infinite;
+}
+.animation-rotate-3{
+    animation: rotate-2 10s linear infinite;
+}
+.animation-rotate-4{
+    animation: rotate-2 20s linear infinite;
+}
+
+.asteroid-move-1{
+    left: 30%;
+    animation: asteroid-move-1 20s linear infinite;
+}
+.asteroid-move-2{
+    left: -10%;
+    animation: asteroid-move-2 20s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotate-2 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes asteroid-move-1{
+    from {
+        transform: rotate(0deg);
+        top: -10%;
+    }
+    to {
+        transform: rotate(360deg);
+        top: 110%;
+    }
+}
+
+@keyframes asteroid-move-2{
+    from {
+        top: -10%;
+    }
+    to {
+        top: 110%;
+    }
+}
+

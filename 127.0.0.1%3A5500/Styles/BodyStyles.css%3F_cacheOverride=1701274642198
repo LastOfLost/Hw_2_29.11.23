@@ -1,0 +1,33 @@
+
+body{
+    
+}
+
+img{
+    background-size: cover;
+}
+
+.test{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+
+.space-background{
+    background-image: url(/Images/background.jpg);
+    height: max-content;
+    width: max-content;
+    /* position: fixed; */
+}
+
+.moon{
+    background-image: url(/Images/moon.png);
+    height: 300px;
+    width: 300px;
+}
+
+.conteiner{
+    height: auto;
+    width: auto;
+}
