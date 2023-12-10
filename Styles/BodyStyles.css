@@ -7,7 +7,7 @@
 
 body{
     height: 100vh;
-    background-image: url(/Images/background.jpg);
+    background-image: url(../Images/background.jpg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,14 +15,14 @@ body{
 }
 
 .asteroid{
-    background-image: url(/Images/asteroid.png);
+    background-image: url(../Images/asteroid.png);
     width: 5vh;
     height: 5vh;
     position: absolute;
 }
 
 .moon{
-    background-image: url(/Images/moon.png);
+    background-image: url(../Images/moon.png);
     height: 300px;
     width: 300px;
     border-radius: 60%;
